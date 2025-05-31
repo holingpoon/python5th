@@ -1,8 +1,13 @@
 # Let's give python some command line arguments
 from sys import argv
 
-# We look for 2 arguments on the command line
-script, filename = argv
+# We look for 1 arguments on the command line
+# script, filename = argv
+script = argv
+prompt = '> '
+
+print(f"Enter the filename")
+filename = input(prompt)
 
 # Given filename from command line, we open the file
 txt = open(filename)
@@ -11,6 +16,7 @@ txt = open(filename)
 print(f"Here's your file {filename}:")
 # We are showing the file on screen
 print(txt.read())
+txt.close()
 # # I added this, we can't read it one more time because we already read the file
 # print(txt.read())
 
