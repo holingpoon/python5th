@@ -1,7 +1,7 @@
 # Allows command line arguments
 from sys import argv
 
-input_file = argv
+script, input_file = argv
 
 # Reading from this file
 # input_file = "ex20_test.txt"
