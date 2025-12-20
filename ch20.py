@@ -1,8 +1,10 @@
 # Allows command line arguments
 from sys import argv
 
+input_file = argv
+
 # Reading from this file
-input_file = "ex20_test.txt"
+# input_file = "ex20_test.txt"
 
 # Print entire file at once
 def print_all(f):
@@ -31,12 +33,15 @@ print("Let's print three lines:")
 
 # Start from line 1
 current_line = 1
+print(f"Current line is {current_line}")
 print_a_line(current_line, current_file)
 
 # Advance to line 2
-current_line = current_line + 1
+current_line += 1
+print(f"Current line is {current_line}")
 print_a_line(current_line, current_file)
 
 # Advance to line 3
-current_line = current_line + 1
+current_line += 1
+print(f"Current line is {current_line}")
 print_a_line(current_line, current_file)
