@@ -29,5 +29,10 @@ corvette = {
 }
 
 print("My", corvette["color"], "can go")
-# Needs () to execute function run, without () will end program since run is a variable
+# In python everything is an object. Since run is a function object, adding () will 
+# execute the function
 corvette["run"]()
+
+# This object is not a function but just a string, python will fail when trying to
+# execute color as a function
+# corvette["color"]()
